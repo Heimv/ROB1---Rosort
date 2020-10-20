@@ -1,4 +1,5 @@
 # Ros import
+import csv
 
 import rclpy
 from rclpy.node import Node
@@ -13,14 +14,15 @@ from nav_msgs.msg import Odometry
 
 # python import
 import numpy as np
+from numpy import inf
 import math
 import time
 import _thread
 
 # local import
-from wall_follower.wall_follower.Directions import Directions
-from wall_follower.wall_follower import Location
-from wall_follower.wall_follower import Distances
+from src.wall_follower.wall_follower.Directions.directions import Directions
+from src.wall_follower.wall_follower.Location.location import Location
+from src.wall_follower.wall_follower.Distances.distances import Distances
 
 
 # GOTO 9.5 8.5
