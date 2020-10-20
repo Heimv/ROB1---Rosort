@@ -1,0 +1,8 @@
+repositories:
+    heimv/ROB1---Rosort
+        type: git
+        url: https://github.com/heimv/ROB1---Rosort/
+    turtlebot3/turtlebot3:
+        type: git
+        url: https://github.com/ROBOTIS-GIT/turtlebot3.git
+        version: ros2
