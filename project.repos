@@ -1,0 +1,17 @@
+repositories:
+    ROB1---Rosort:
+        type: git
+        url: https://github.com/Heimv/ROB1---Rosort.git
+        version: master
+    turtlebot3/turtlebot3:
+        type: git
+        url: https://github.com/ROBOTIS-GIT/turtlebot3.git
+        version: ros2
+    utils/DynamixelSDK:
+        type: git
+        url: https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+        version: ros2
+    utils/hls_lfcd_lds_driver:
+        type: git
+        url: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+        version: ros2⏎
