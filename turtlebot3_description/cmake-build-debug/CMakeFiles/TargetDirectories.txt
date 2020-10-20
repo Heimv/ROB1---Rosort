@@ -1,0 +1,9 @@
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/install/local.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/install.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/uninstall.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/turtlebot3_description_uninstall.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/test.dir
+/home/heimv/CLionProjects/ROB1---Rosort/src/turtlebot3_description/cmake-build-debug/CMakeFiles/edit_cache.dir
