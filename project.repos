@@ -14,4 +14,4 @@ repositories:
     utils/hls_lfcd_lds_driver:
         type: git
         url: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-        version: ros2⏎
+        version: ros2
