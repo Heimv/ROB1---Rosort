@@ -33,11 +33,16 @@ class Driver(Node):
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    driver = Driver()
-    rclpy.spin(driver)
-    driver.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.init(args=args)
+        driver = Driver()
+        rclpy.spin(driver)
+    except KeyboardInterrupt:
+        print("Interrupted")
+    finally:
+        print("cleaning node")
+        driver.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':

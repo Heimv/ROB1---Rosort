@@ -20,9 +20,9 @@ import time
 import _thread
 
 # local import
-from src.wall_follower.wall_follower.Directions.directions import Directions
-from src.wall_follower.wall_follower.Location.location import Location
-from src.wall_follower.wall_follower.Distances.distances import Distances
+from wall_follower.Directions.directions import Directions
+from wall_follower.Location.location import Location
+from wall_follower.Distances.distances import Distances
 
 
 # GOTO 9.5 8.5
@@ -202,31 +202,24 @@ class WallFollower(Node):
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    clk = False
-
-    def setClk():
-        nonlocal clk
-        clk = True
-    timer = Node.create_subscription(Time, 'clock', setClk)
-    _thread.start_new_thread(rclpy.spin, (timer, None))
-    while not clk:
-        time.sleep(.1)
-    follower = WallFollower()
-    #rclpy.spin(follower)
-    print("waiting for clock time to init")
-
-    print("received clock init")
-    _thread.start_new_thread(rclpy.spin, (follower, None))
-    time.sleep(2)
-    while follower.current_location.distance(9.5, 8.5) > .1:
-        hit_wall = follower.go_until_obstacle()
-        if hit_wall:
-            follower.follow_wall()
-            follower.search_lost_wall()
-    print("Arrived at", (9.5, 8.5))
-    follower.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.init(args=args)
+        follower = WallFollower()
+        #rclpy.spin(follower)
+        _thread.start_new_thread(rclpy.spin, (follower, None))
+        time.sleep(2)
+        while follower.current_location.distance(9.5, 8.5) > .1:
+            hit_wall = follower.go_until_obstacle()
+            if hit_wall:
+                follower.follow_wall()
+                follower.search_lost_wall()
+        print("Arrived at", (9.5, 8.5))
+    except KeyboardInterrupt:
+        print("node interrupted")
+    finally:
+        print("cleaning node")
+        follower.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':
