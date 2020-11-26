@@ -20,9 +20,9 @@ import time
 import _thread
 
 # local import
-from wall_follower.Directions.directions import Directions
-from wall_follower.Location.location import Location
-from wall_follower.Distances.distances import Distances
+from src.wall_follower.wall_follower.Directions.directions import Directions
+from src.wall_follower.wall_follower.Location.location import Location
+from src.wall_follower.wall_follower.Distances.distances import Distances
 
 
 # GOTO 9.5 8.5

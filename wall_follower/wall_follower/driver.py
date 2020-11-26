@@ -4,8 +4,6 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from rclpy.qos import qos_profile_sensor_data
 
-import math
-
 
 class Driver(Node):
     def __init__(self):

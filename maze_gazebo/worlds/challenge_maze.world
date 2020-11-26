@@ -72,7 +72,7 @@
       <pose>9.9 -5 0 0 0 0</pose>
     </include>
     <include>
-      <uri>model://turtlebot3_waffle</uri>
+      <uri>model://turtlebot3_burger</uri>
       <pose>9.5 -8.5 0.02 0 0 3.141592654</pose>
     </include>
   </world>
